@@ -36,8 +36,8 @@ modules:
       - ln -s "/usr/bin/xdg-open" "${FLATPAK_DEST}/bin/firefox"
     sources:
       - type: archive
-        url: https://downloadirpf.receita.fazenda.gov.br/irpf/2022/irpf/arquivos/IRPF2022-1.1.zip
-        sha256: 5ad10513337a56752b12adac0ed03448f4bf4512ef383b5e3713ef3c2bab4322
+        url: https://downloadirpf.receita.fazenda.gov.br/irpf/2022/irpf/arquivos/IRPF2022-1.2.zip
+        sha256: 28488ddf99b9076e1b995813d82850a03ee314e4f5d804ad39403ad2003b8ad2
       - type: file
         path: irpf
       - type: file
