@@ -4,6 +4,7 @@ runtime-version: '41'
 sdk: org.gnome.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.openjdk11
+tags: [ proprietary ]
 command: irpf
 finish-args:
   - --share=network
