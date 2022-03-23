@@ -5,12 +5,13 @@
 # - python-ruamel-yaml (https://pypi.org/project/ruamel.yaml/)
 
 # To automatically update the XML sources in the Flatpak manifest file, run:
-# ./update-zip-assets.py -m ../br.gov.fazenda.receita.irpf.yaml
+# ./update-zip-assets.py -x -m ../br.gov.fazenda.receita.irpf.yaml
 
 import argparse
 import datetime
 import hashlib
 import os
+import re
 import requests
 import sys
 import xml.etree.ElementTree as ET
@@ -38,6 +39,8 @@ parser.add_argument('-m', '--manifest', type=manifest_exists,
                     help='Path to the Flatpak YAML manifest to be auto-updated')
 parser.add_argument('-y', '--year', type=validate_year, default=datetime.datetime.now().year,
                     help='Year of the zip assets (defaults to current year)')
+parser.add_argument('-x', action=argparse.BooleanOptionalAction,
+                    help='Also generate x-checker-data entry')
 
 args = parser.parse_args()
 
@@ -126,6 +129,12 @@ if args.manifest == None:
         print('        url:', asset['url'])
         print('        sha256:', asset['sha256'])
         print('        strip-components: 2')
+        if args.x:
+            print('        x-checker-data:')
+            print('          type:', 'html')
+            print('          url:', final_url)
+            print('          version-pattern:', re.escape(asset['id']) + '__([\d_]+)\.zip'),
+            print('          url-template:', os.path.dirname(final_url) + '/' + re.escape(asset['id']) + '__$version.zip')
 else:
     eprint(f'Updating manifest file "{args.manifest}" ... ', end='', flush=True)
     try:
@@ -154,12 +163,20 @@ else:
         manifest['modules'][k]['sources'] = []
         # update the sources list with the new information
         for asset in assets:
-            manifest['modules'][k]['sources'].append({
+            new_asset = {
                 'type': 'archive',
                 'url': asset['url'],
                 'sha256': asset['sha256'],
-                'strip-components': 2
-            })
+                'strip-components': 2,
+            }
+            if args.x:
+                new_asset['x-checker-data'] = {
+                    'type': 'html',
+                    'url': final_url,
+                    'version-pattern': re.escape(asset['id']) + '__([\d_]+)\.zip',
+                    'url-template': os.path.dirname(final_url) + '/' + re.escape(asset['id']) + '__$version.zip'
+                }
+            manifest['modules'][k]['sources'].append(new_asset)
         break
 
     try:
