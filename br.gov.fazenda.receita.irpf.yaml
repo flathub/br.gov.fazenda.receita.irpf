@@ -39,6 +39,11 @@ modules:
       - type: archive
         url: https://downloadirpf.receita.fazenda.gov.br/irpf/2022/irpf/arquivos/IRPF2022-1.2.zip
         sha256: 28488ddf99b9076e1b995813d82850a03ee314e4f5d804ad39403ad2003b8ad2
+        x-checker-data:
+          type: html
+          url: https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/download/pgd/dirpf
+          version-pattern: /arquivos/IRPF([\d.-]+)\.zip
+          url-template: https://downloadirpf.receita.fazenda.gov.br/irpf/$major/irpf/arquivos/IRPF$version.zip
       - type: file
         path: irpf
       - type: file
@@ -51,6 +56,7 @@ modules:
         path: icon-128.png
       - type: file
         path: icon-256.png
+
   - name: irpf_xml
     buildsystem: simple
     build-commands:
