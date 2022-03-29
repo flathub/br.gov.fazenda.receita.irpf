@@ -31,7 +31,8 @@ modules:
       - install -Dm644 "icon-128.png" "${FLATPAK_DEST}/share/icons/hicolor/128x128/apps/br.gov.fazenda.receita.irpf.png"
       - install -Dm644 "icon-256.png" "${FLATPAK_DEST}/share/icons/hicolor/256x256/apps/br.gov.fazenda.receita.irpf.png"
       - install -Dm644 -t "${FLATPAK_DEST}/share/metainfo" "br.gov.fazenda.receita.irpf.metainfo.xml"
-      - install -Dm644 -t "${FLATPAK_DEST}/share/br.gov.fazenda.receita.irpf" "irpf.jar" "pgd-updater.jar"
+      - install -Dm644 -t "${FLATPAK_DEST}/share/br.gov.fazenda.receita.irpf" "irpf.jar"
+        "pgd-updater.jar"
       - cp -r --no-preserve=mode help/ lib/ lib-modulos/ "${FLATPAK_DEST}/share/br.gov.fazenda.receita.irpf"
       # Workaround to make the clickable link on the "About" window open with the default web browser.
       - ln -s "/usr/bin/xdg-open" "${FLATPAK_DEST}/bin/firefox"
@@ -161,8 +162,8 @@ modules:
           version-pattern: LINKS__([\d_]+)\.zip
           url-template: https://downloadirpf.receita.fazenda.gov.br/irpf/2022/irpf/update/LINKS__$version.zip
       - type: archive
-        url: https://downloadirpf.receita.fazenda.gov.br/irpf/2022/irpf/update/MSGS__20220326_20220326021514.zip
-        sha256: 371819714265a9bd1e89f874147ca9773d6d7e5f9cf1024d4f6d3b5191b35612
+        url: https://downloadirpf.receita.fazenda.gov.br/irpf/2022/irpf/update/MSGS__20220329_20220329021551.zip
+        sha256: 354a72075b31aa3de7bd4b4b2f7f8973e0528007d9c5dc3f808e0d0fba4d6b5b
         strip-components: 2
         x-checker-data:
           type: html
