@@ -147,7 +147,8 @@ else:
     try:
         yaml = YAML()
         # prevent line truncation
-        yaml.width = 200
+        # TODO: Uncomment when https://github.com/flathub/flatpak-external-data-checker/issues/280 gets resolved
+        #yaml.width = 200
         yaml.indent(sequence=4, offset=2)
         manifest = yaml.load(fd)
         fd.close()
