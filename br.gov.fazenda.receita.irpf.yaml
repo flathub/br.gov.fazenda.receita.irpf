@@ -45,8 +45,10 @@ modules:
           url: https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/download/pgd/dirpf
           version-pattern: /arquivos/IRPF([\d.-]+)\.zip
           url-template: https://downloadirpf.receita.fazenda.gov.br/irpf/$major/irpf/arquivos/IRPF$version.zip
-      - type: file
-        path: irpf
+      - type: script
+        dest-filename: irpf
+        commands:
+          - exec java -jar /app/share/br.gov.fazenda.receita.irpf/irpf.jar $@
       - type: file
         path: br.gov.fazenda.receita.irpf.metainfo.xml
       - type: file

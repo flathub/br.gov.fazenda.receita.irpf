@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-exec java -jar /app/share/br.gov.fazenda.receita.irpf/irpf.jar $@
