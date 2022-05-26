@@ -163,8 +163,8 @@ modules:
           version-pattern: LINKS__([\d_]+)\.zip
           url-template: https://downloadirpf.receita.fazenda.gov.br/irpf/2022/irpf/update/LINKS__$version.zip
       - type: archive
-        url: https://downloadirpf.receita.fazenda.gov.br/irpf/2022/irpf/update/MSGS__20220507_20220507021511.zip
-        sha256: 32d3706a2ccf95cd16d62cbeb7d835024fd85599d219af501ec131b4653d1980
+        url: https://downloadirpf.receita.fazenda.gov.br/irpf/2022/irpf/update/MSGS__20220526_20220526021506.zip
+        sha256: 6ef8558d4e8c6af6c058b6791f71b83a46004e62ee854b89392e4ec0669cec26
         strip-components: 2
         x-checker-data:
           type: html
@@ -190,8 +190,8 @@ modules:
           version-pattern: OCPRI__([\d_]+)\.zip
           url-template: https://downloadirpf.receita.fazenda.gov.br/irpf/2022/irpf/update/OCPRI__$version.zip
       - type: archive
-        url: https://downloadirpf.receita.fazenda.gov.br/irpf/2022/irpf/update/PAIS__20211211_20220305123016.zip
-        sha256: 5e7d8aa9204be3d164aa6c56d0764e9b446865f04a1a7a0b410317d9927a305d
+        url: https://downloadirpf.receita.fazenda.gov.br/irpf/2022/irpf/update/PAIS__20220526_20220526021506.zip
+        sha256: 2518854c2df82d1ea4dc4d44d339a8f2196c803b320e9892b4505439ad41614f
         strip-components: 2
         x-checker-data:
           type: html
