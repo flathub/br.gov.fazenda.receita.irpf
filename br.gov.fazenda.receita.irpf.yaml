@@ -163,8 +163,8 @@ modules:
           version-pattern: LINKS__([\d_]+)\.zip
           url-template: https://downloadirpf.receita.fazenda.gov.br/irpf/2022/irpf/update/LINKS__$version.zip
       - type: archive
-        url: https://downloadirpf.receita.fazenda.gov.br/irpf/2022/irpf/update/MSGS__20220526_20220526021506.zip
-        sha256: 6ef8558d4e8c6af6c058b6791f71b83a46004e62ee854b89392e4ec0669cec26
+        url: https://downloadirpf.receita.fazenda.gov.br/irpf/2022/irpf/update/MSGS__20220527_20220527021542.zip
+        sha256: 90400cbaa6778b6c9a6c0216e6d897e744d71ec751dbe4363b9e77286b92c856
         strip-components: 2
         x-checker-data:
           type: html
