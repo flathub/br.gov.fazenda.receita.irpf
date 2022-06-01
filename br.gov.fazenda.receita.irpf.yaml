@@ -154,8 +154,8 @@ modules:
           version-pattern: IDOSO__([\d_]+)\.zip
           url-template: https://downloadirpf.receita.fazenda.gov.br/irpf/2022/irpf/update/IDOSO__$version.zip
       - type: archive
-        url: https://downloadirpf.receita.fazenda.gov.br/irpf/2022/irpf/update/LINKS__20220505_20220505021535.zip
-        sha256: 121ebab558da980642c436b913ca4b4aab87ddc4728589d2a3b9c5816b0e8cc6
+        url: https://downloadirpf.receita.fazenda.gov.br/irpf/2022/irpf/update/LINKS__20220531_20220601021533.zip
+        sha256: eed9ee7096b2f034af8f3ae553fa3bf452a5978f93c1e4565197f24eb648f1fb
         strip-components: 2
         x-checker-data:
           type: html
@@ -163,8 +163,8 @@ modules:
           version-pattern: LINKS__([\d_]+)\.zip
           url-template: https://downloadirpf.receita.fazenda.gov.br/irpf/2022/irpf/update/LINKS__$version.zip
       - type: archive
-        url: https://downloadirpf.receita.fazenda.gov.br/irpf/2022/irpf/update/MSGS__20220531_20220531021535.zip
-        sha256: 13bcd39fc1e8f8ad6880c29dcbbb05741d989eb84aea04085c3a8fe4220028a4
+        url: https://downloadirpf.receita.fazenda.gov.br/irpf/2022/irpf/update/MSGS__20220601_20220601021533.zip
+        sha256: dadd8da42866ec081508143d565d5a2377ce460ec61e0a3d149e40b19801785c
         strip-components: 2
         x-checker-data:
           type: html
