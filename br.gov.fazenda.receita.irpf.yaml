@@ -37,8 +37,8 @@ modules:
       - ln -s /usr/bin/xdg-open /app/bin/firefox
     sources:
       - type: archive
-        url: https://downloadirpf.receita.fazenda.gov.br/irpf/2022/irpf/arquivos/IRPF2022-1.7.zip
-        sha256: 3cf3655dca594d8d6ae161a9ffe5ff7acb2cf1f008a746f7168f9fd7f7e913c7
+        url: https://downloadirpf.receita.fazenda.gov.br/irpf/2022/irpf/arquivos/IRPF2022-1.8.zip
+        sha256: 33bbef2ad800b36734d5992210b58abd536fdaea7705a5fd8b384f56a627468d
         x-checker-data:
           type: html
           url: https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/download/pgd/dirpf
