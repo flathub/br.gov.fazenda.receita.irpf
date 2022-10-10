@@ -14,6 +14,9 @@ finish-args:
   - --env=JAVA_HOME=/app/jre
   - --talk-name=org.gtk.vfs.*
   - --filesystem=xdg-run/gvfsd
+  # Useful to save PDFs and whatnot.
+  - --filesystem=xdg-documents
+  # This path is hardcoded by the app to save all kinds of tax data.
   - --filesystem=~/ProgramasRFB:create
   # User-defined preferences (such as hiding the welcome window) are stored under: ~/.java/.userPrefs/serpro/ppgd/irpf/prefs.xml
   - --persist=.java
