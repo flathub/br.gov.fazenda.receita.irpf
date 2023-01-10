@@ -6,12 +6,20 @@ sdk-extensions:
   - org.freedesktop.Sdk.Extension.openjdk11
 tags: [proprietary]
 command: irpf
+
+add-extensions:
+  org.freedesktop.Sdk.Extension.openjdk11:
+    directory: jre
+    subdirectories: true
+    autodelete: true
+    version: '22.08'
+
 finish-args:
   - --share=network
   - --socket=x11
   - --share=ipc
-  - --env=PATH=/app/jre/bin:/app/bin:/usr/bin
-  - --env=JAVA_HOME=/app/jre
+  - --env=PATH=/app/jre/jvm/openjdk-11/bin:/app/bin:/usr/bin
+  - --env=JAVA_HOME=/app/jre/jvm/openjdk-11
   - --talk-name=org.gtk.vfs.*
   - --filesystem=xdg-run/gvfsd
   # Useful to save PDFs and whatnot.
@@ -223,4 +231,4 @@ modules:
       - name: openjdk
         buildsystem: simple
         build-commands:
-          - /usr/lib/sdk/openjdk11/install.sh
+          - install -d /app/jre
