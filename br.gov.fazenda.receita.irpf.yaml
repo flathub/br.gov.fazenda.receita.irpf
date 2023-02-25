@@ -202,8 +202,8 @@ modules:
           version-pattern: PAIS__([\d_]+)\.zip
           url-template: https://downloadirpf.receita.fazenda.gov.br/irpf/2022/irpf/update/PAIS__$version.zip
       - type: archive
-        url: https://downloadirpf.receita.fazenda.gov.br/irpf/2022/irpf/update/PGTOS__20220227_20220305123016.zip
-        sha256: f089edac9175e4b1a29691abc1d7259492de37226333720236128344d85dab24
+        url: https://downloadirpf.receita.fazenda.gov.br/irpf/2022/irpf/update/PGTOS__20230225_20230225021603.zip
+        sha256: b78ada4743c6eb5bbc895c07460ec19e8eb55edfde8bcb191c1297551ba2febb
         strip-components: 2
         x-checker-data:
           type: html
