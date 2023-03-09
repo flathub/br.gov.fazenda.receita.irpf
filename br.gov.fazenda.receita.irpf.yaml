@@ -76,8 +76,8 @@ modules:
     # ./tools/update-zip-assets.py -x -m br.gov.fazenda.receita.irpf.yaml
     sources:
       - type: archive
-        url: https://downloadirpf.receita.fazenda.gov.br/irpf/2022/irpf/update/AJUST__20211221_20220305123016.zip
-        sha256: 8ad0d5956c9b8387a146e7abf293609aa7f85566a651e0ad89b8ebc3e8b60a12
+        url: https://downloadirpf.receita.fazenda.gov.br/irpf/2022/irpf/update/AJUST__20211221_20230309021614.zip
+        sha256: a254e4be541bcbc8e71dec6b22bee5d0c34fee03f636286f972f68741b0216da
         strip-components: 2
         x-checker-data:
           type: html
@@ -166,8 +166,8 @@ modules:
           version-pattern: LINKS__([\d_]+)\.zip
           url-template: https://downloadirpf.receita.fazenda.gov.br/irpf/2022/irpf/update/LINKS__$version.zip
       - type: archive
-        url: https://downloadirpf.receita.fazenda.gov.br/irpf/2022/irpf/update/MSGS__20220601_20220601021533.zip
-        sha256: dadd8da42866ec081508143d565d5a2377ce460ec61e0a3d149e40b19801785c
+        url: https://downloadirpf.receita.fazenda.gov.br/irpf/2022/irpf/update/MSGS__20230119_20230309021614.zip
+        sha256: b0f8653a4765380c458649930bcf7b29da79abb2dfebd2528f19b70011ed56a4
         strip-components: 2
         x-checker-data:
           type: html
