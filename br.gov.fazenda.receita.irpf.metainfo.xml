@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
   <id>br.gov.fazenda.receita.irpf</id>
-  <name>IRPF 2022</name>
+  <name>IRPF 2023</name>
   <launchable type="desktop-id">br.gov.fazenda.receita.irpf.desktop</launchable>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>LicenseRef-proprietary</project_license>
@@ -13,7 +13,7 @@
     <p>NOTE: This wrapper is not verified by, affiliated with, or supported by SERPRO.</p>
   </description>
   <description xml:lang="pt_BR">
-    <p>Preenche as declarações de Ajuste Anual, Final de Espólio e Saída Definitiva do País 2022, referentes aos rendimentos recebidos durante o ano-calendário de 2021 e para efetuar todos os cálculos necessários à apuração do imposto.</p>
+    <p>Preenche as declarações de Ajuste Anual, Final de Espólio e Saída Definitiva do País 2023, referentes aos rendimentos recebidos durante o ano-calendário de 2022 e para efetuar todos os cálculos necessários à apuração do imposto.</p>
     <p>AVISO: Este pacote não tem verificação, afiliação ou apoio da SERPRO.</p>
   </description>
   <url type="homepage">https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda</url>
@@ -24,6 +24,7 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release date="2023-03-09" version="2023-1.0"/>
     <release date="2022-08-16" version="2022-1.8"/>
     <release date="2022-06-01" version="2022-1.7"/>
     <release date="2022-05-24" version="2022-1.6"/>
