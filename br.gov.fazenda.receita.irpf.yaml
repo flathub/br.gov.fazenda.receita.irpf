@@ -47,6 +47,7 @@ modules:
           url: https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/download/pgd/dirpf
           version-pattern: /arquivos/IRPF([\d.-]+)\.zip
           url-template: https://downloadirpf.receita.fazenda.gov.br/irpf/$major/irpf/arquivos/IRPF$version.zip
+          is-main-source: true
       - type: script
         dest-filename: irpf
         commands:
