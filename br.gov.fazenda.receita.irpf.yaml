@@ -86,8 +86,8 @@ modules:
           version-pattern: AJUST__([\d_]+)\.zip
           url-template: https://downloadirpf.receita.fazenda.gov.br/irpf/2023/irpf/update/AJUST__$version.zip
       - type: archive
-        url: https://downloadirpf.receita.fazenda.gov.br/irpf/2023/irpf/update/BANCO__20230405_20230405114609.zip
-        sha256: 84a5a650fb8fe234cf18dbd0548221b4c7c5bb1f47ae993d51baadf78b3869e6
+        url: https://downloadirpf.receita.fazenda.gov.br/irpf/2023/irpf/update/BANCO__20230406_20230406162723.zip
+        sha256: b646e8831af1981d6d7b412e785edeb643824b35f0ae3985aea1bd8a2b87f31d
         strip-components: 2
         x-checker-data:
           type: html
@@ -158,8 +158,8 @@ modules:
           version-pattern: IDOSO__([\d_]+)\.zip
           url-template: https://downloadirpf.receita.fazenda.gov.br/irpf/2023/irpf/update/IDOSO__$version.zip
       - type: archive
-        url: https://downloadirpf.receita.fazenda.gov.br/irpf/2023/irpf/update/LINKS__20230315_20230405114609.zip
-        sha256: 194093a4d89976035fbc63856c6e74ef08d469d8c93bd89872bb7d345d2dbd46
+        url: https://downloadirpf.receita.fazenda.gov.br/irpf/2023/irpf/update/LINKS__20230406_20230406162723.zip
+        sha256: 372c7dcc6059c9f0e47d6785330de7cfa70ccb67ca3f70badd92a3e953c77d81
         strip-components: 2
         x-checker-data:
           type: html
